@@ -7,7 +7,7 @@ public class Trainning extends Applet implements Runnable
 	int x;
 	int c;
 	Thread t,t1;
-    String ch;
+    	String ch;
 	
 //============================================initialization of thread================================================    
 	public void init()
@@ -27,13 +27,13 @@ public class Trainning extends Applet implements Runnable
 
 		c=1;
 		x=-10;
-            for(int i=1;i<150;i++)
+            	for(int i=1;i<150;i++)
 			{
 				repaint();
                 
 //===============================================for the green signal=================================================
 				
-                if(c==1)
+                		if(c==1)
 				{
 					for(int j=1;j<100;j++)
 					{
@@ -85,12 +85,12 @@ public class Trainning extends Applet implements Runnable
 //============================================Assign the values from function=========================================
 
 	public void assign(int x1 , int y1 , int x2 , int y2)
-    {
-        this.x1 = x1;
-        this.x2 = x2;
-        this.y1 = y1;
-        this.y2 = y2;
-    }
+	{
+		this.x1 = x1;
+		this.x2 = x2;
+		this.y1 = y1;
+		this.y2 = y2;
+	}
     
 //===================================================draw the delay==================================================
 
@@ -188,7 +188,7 @@ public class Trainning extends Applet implements Runnable
 //===========================================outline for block 1 yellow===============================================
         
         g.setColor(Color.black);
-		g.drawRect(30-1,99,200,100);
+	g.drawRect(30-1,99,200,100);
         
 //============================================draw window 1 and 2 for block 1=========================================
        
@@ -199,7 +199,7 @@ public class Trainning extends Applet implements Runnable
 //=========================================draw wheel circle 1========================================================
         
         g.setColor(Color.black);
-		g.fillOval(30,200,50,50);
+	g.fillOval(30,200,50,50);
         
 //=========================================draw inner circle wheel circle 1===========================================
         
@@ -209,7 +209,7 @@ public class Trainning extends Applet implements Runnable
 //===============================================draw wheel circle 2==================================================
 		
         g.setColor(Color.black);
-		g.fillOval((30+150),200,50,50);
+	g.fillOval((30+150),200,50,50);
         
 //===============================================draw inner circle wheel circle 2=====================================
         
@@ -219,12 +219,12 @@ public class Trainning extends Applet implements Runnable
 //==============================================draw block 2 yellow block=============================================
 		
         g.setColor(Color.red);
-		g.fillRect(30+300,100,200,100);
+	g.fillRect(30+300,100,200,100);
         
 //==========================================outline for block 1 yellow================================================
         
         g.setColor(Color.black);
-		g.drawRect(30+300-1,99,200,100);
+	g.drawRect(30+300-1,99,200,100);
         
 //=============================================draw window 1 and 2 for block 2========================================
         
@@ -235,7 +235,7 @@ public class Trainning extends Applet implements Runnable
 //===============================================draw wheel circle 3==================================================
 		
         g.setColor(Color.black);
-		g.fillOval(30+300,200,50,50);
+	g.fillOval(30+300,200,50,50);
         
 //=======================================draw inner circle wheel circle3==============================================
         
@@ -245,7 +245,7 @@ public class Trainning extends Applet implements Runnable
 //=============================================draw wheel circle 4====================================================
 		
         g.setColor(Color.black);
-		g.fillOval((30+300+150),200,50,50);
+	g.fillOval((30+300+150),200,50,50);
         
 //=========================================draw inner circle wheel circle 4===========================================
         
@@ -255,7 +255,7 @@ public class Trainning extends Applet implements Runnable
 //==============================================Engine curve start====================================================
         
         g.setColor(Color.yellow);
-		g.fillArc((30+450),100,100,100,270,180);
+	g.fillArc((30+450),100,100,100,270,180);
         
         g.setColor(Color.black);
         g.drawArc((30+450),100,100-1,100-1,270,180);
